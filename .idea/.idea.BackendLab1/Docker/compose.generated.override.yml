@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  backendlab1:
+    build:
+      context: "C:\\Users\\schri\\RiderProjects\\BackendLab1"
+      dockerfile: "BackendLab1/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/BackendLab1.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "backendlab1:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\schri\\RiderProjects\\BackendLab1\\BackendLab1:/app:rw"
+    - "C:\\Users\\schri\\RiderProjects\\BackendLab1:/src:rw"
+    - "C:\\Users\\schri\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"

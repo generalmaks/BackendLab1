@@ -1,0 +1,9 @@
+﻿services:
+  backendlab1:
+    image: backendlab1
+    build:
+      context: .
+      dockerfile: BackendLab1/Dockerfile
+    ports:
+      - "8080:8080"
+
